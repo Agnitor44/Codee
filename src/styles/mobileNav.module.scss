@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway&family=Ubuntu&display=swap");
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body.nav__overlay {
+  position: fixed;
+}
+
+.blackWrapper {
+  background-color: black;
+  width: 100%;
+  height: 60vh;
+  .nav__overlay {
+    background-color: rgba($color: #000000, $alpha: 0.9);
+    animation: fadeIn 0.5s;
+    position: fixed;
+    height: auto;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+    height: 100vh;
+    overflow-y: hidden;
+    .nav__registerButton {
+      background-color: #707070;
+      color: white;
+      border-radius: 31px;
+      font-size: 19px;
+      padding: 10px 100px;
+      border: none;
+      margin-left: 10px;
+      align-self: center;
+    }
+    .nav__overlayContainer {
+      margin-top: 80px;
+      display: flex;
+      height: 90vh;
+      flex-direction: column;
+
+      .nav__linkContainer {
+        margin: 0 10px;
+        padding: 20px 0;
+        .nav__linkContainer {
+          border-top: #707070 1px solid;
+          display: flex;
+
+          align-items: center;
+          a.nav__link {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+  .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    button {
+      font-family: "Inter", sans-serif;
+      background-color: transparent;
+      width: 80px;
+      z-index: 4;
+      border: none;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .blackWrapper {
+    display: none;
+  }
+}

@@ -1,0 +1,71 @@
+.container {
+  width: 100%;
+  border: black 1px solid;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 70%;
+}
+.container .tab {
+  border: none;
+  border-right: 1px solid black;
+  font-family: "Inter", sans-serif;
+  background-color: transparent;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  width: 100%;
+}
+.container .tab:last-child {
+  border: none;
+}
+.container .tab__active {
+  background-color: black;
+  color: white;
+  border: none;
+  border-right: 1px solid black;
+  font-family: "Inter", sans-serif;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 0px 16px 0px 16px;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+}
+.container .tab__active:last-child {
+  border: none;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+  .container .tab {
+    font-size: 14px;
+  }
+  .container .tab__active {
+    font-size: 14px;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    width: 95%;
+  }
+  .container .tab {
+    font-size: 12px;
+  }
+  .container .tab__active {
+    font-size: 12px;
+  }
+} /*# sourceMappingURL=tabs.module.css.map */
